@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPlanners</title>
+    <script src="https://kit.fontawesome.com/edfa7ba126.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/cake-candles-solid.svg" type="image/x-icon" >
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-cake-candles logo"></i>
+        <div class="logo-text">EventPlanners</div>
+        
+        <a href="#all" class="bg-menu">Всі свята <img src="img/arrow.png" alt="arrow"></a>
+        <nav>
+            <ul>
+                <li class="li-item"><a href="index.html">Home</a></li>
+                <li class="li-item"><a href="services.html">Свята</a></li>
+                <li class="li-item"><a href="#home">Послуги<img src="img/arrow.png" alt="arrow"></a></li>
+                <li class="li-item"><a href="#home">Про Нас</a></li>
+                <li class="li-item"><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="icon-number">
+                <img src="img/icon-search.png" alt="search">
+            </div>
+            <div class="icon-number">
+                <p class="number">3</p>
+                <img src="img/icon-heart.png" alt="heart">
+            </div>
+            <div class="icon-number">
+                <p class="number">1</p>
+                <img src="img/icon-shoppingcart.png" alt="shoppingcart">
+            </div>
+        </div>               
+    </header>
+    <div class="block-shop">
+        <div class="shop">
+            <h2 class="product-name">Наша Контактна Інформація!</h2>
+            <div class="description">
+                Ви можете зв'язатися з нами у будь-який зручний спосіб
+            </div>
+            <div class="contact-info">
+                    <div class="d-flex">
+                        <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="phone-text"><a href="tel:+38096 346 2345">+38096 346 2345</a></div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="email-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="email-text"><a href="mailto:eventplanners.info@gmail.com">eventplanners.info@gmail.com</a></div>
+                    </div>
+            </div>
+            <div class="description">
+                На зв'язку з вами щодня з 10:00 до 22:00
+            </div>
+            <button class="myButton">Зв'язатися з нами</button>
+        </div>
+        
+    </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                Зв'яжіться з нами
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <p>
+                Введіть ваш номер телефону :
+              </p>
+					<input type="tel" id="phone" name="phone" placeholder="+380(99)999-99-99">
+            </main>
+            <footer class="modal__footer">
+              <button class="modal__btn modal__btn-primary" data-micromodal-close aria-label="Close this dialog window">Продовжити</button>
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Закрити</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <button onclick="scrollToTop()" id="scrollBtn"><i class="fa-solid fa-arrow-up"></i></button>
+      <footer>
+        <div class="footer">
+            <div class="ft-block">
+                <div class="block-inline">
+                    <i class="fa-solid fa-cake-candles logo"></i>
+                        <div class="logo-text">EventPlanners</div>
+                </div>
+                <img src="img/location.png" alt="location">
+                <p class="block-text"><span>01.</span> Галицька 32, поверх 3</p>
+                <p class="block-text"><span>02.</span> Мазепи 46а, корпус 9</p>
+            </div>
+            <div class="ft-nav">
+                <p class="nav-title">Топ Свят</p>
+                <hr>
+                <p class="nav-text">Корпоративи</p>
+                <p class="nav-text">Весілля</p>
+                <p class="nav-text ">Дні народження</p>
+                <p class="nav-text">Ювілеї</p>
+                <p class="nav-text">Інші святкування</p>
+            </div>
+            <div class="ft-nav">
+                <p class="nav-title">Посилання</p>
+                <hr>
+                <p class="nav-text">Про Нас</p>
+                <p class="nav-text">Контакти</p>
+                <p class="nav-text">Запитанння</p>
+                <p class="nav-text">Останні пости</p>
+                <p class="nav-text">Замовити свято</p>
+            </div>
+            <div class="ft-nav">
+                <p class="nav-title">Email</p>
+                <hr>
+                <p class="nav-text">Введіть вашу електронну адресу.</p>
+                <div class="block-subs">
+                    <p>Email address</p>
+                    <a href="#Subscribe"><p>Підписатися</p></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="ft-info">
+            <p class="info-text">© 2023 All Rights Reserved</p>
+            <img src="img/payment.png" alt="payment">
+            <p class="info-folow">Folow Us: 
+                <img src="img/facebook.png" alt="facebook">
+                <img src="img/twitter.png" alt="twitter">
+                <img src="img/instagram.png" alt="instagram">
+                <img src="img/linkedin.png" alt="linkedin">
+            </p>
+        </div>
+	</footer>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
